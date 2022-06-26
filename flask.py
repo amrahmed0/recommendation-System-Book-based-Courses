@@ -30,7 +30,7 @@ def get_recommendations(element_the_search):
 
     return recommendations_df
 
-from flask import Flask,request
+from flask import Flask
 
 app = Flask(__name__)
 
@@ -38,7 +38,7 @@ app = Flask(__name__)
 @app.route('/')
 def welcoming():
     # show the user profile for that user
-    return 'Welcome at course Me reccomandation system'
+    return 'Welcome at course Me recemond'
 
 
 @app.route('/rec/<courseName>', methods=['GET'])
