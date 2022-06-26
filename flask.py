@@ -35,6 +35,12 @@ from flask import Flask,request
 app = Flask(__name__)
 
 
+@app.route('/')
+def welcoming():
+    # show the user profile for that user
+    return 'Welcome at course Me reccomandation system'
+
+
 @app.route('/rec/<courseName>', methods=['GET'])
 def get_books_rec(courseName):
     # show the user profile for that user
